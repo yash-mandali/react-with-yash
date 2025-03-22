@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <h1 className='bg-green-600 rounded-xl text-black p-4 mb-6'>this is tailwind css project</h1>
-      <Card username="Read more" name="Yash"/>
-      <Card username="view more" name="Chikni" />
+      <Card username="Read more" name="Abcd"/>
+      <Card username="view more" name="cdc" />
       <Card username="Explore" />
 
     </>

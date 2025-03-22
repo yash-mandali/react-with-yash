@@ -2,9 +2,9 @@ import React from 'react';
 
 
 
-function Card({username="visit now",name="don"}) {
+function Card({username="visit now", name="don"}) {
     return (
-        <div className='flex-row'>
+        
             <div className=" max-w-xs rounded-md shadow-md bg-black text-gray-100">
                 <img
                     src="./src/image.png"
@@ -23,11 +23,11 @@ function Card({username="visit now",name="don"}) {
                         type="button"
                         className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md text-gray-200"
                     >
-                        {username} 
+                        {username}  
                     </button>
                 </div>
             </div>
-        </div>
+       
     );
 }
 
