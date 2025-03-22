@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <h1>This is counter project</h1>
+      <h1>counter project</h1>
       <h5>value beetween 0 to 20</h5>
       <h2>counter value :: {counter}</h2>
       <button onClick={addval}>Add value</button>
