@@ -28,8 +28,8 @@ function App() {
   }, [length, numberallowed, charallowed, setPassword])
 
   const copytoclip = useCallback(() => {
-    passref.current?.select();  // select text for copy
-    passref.current?.setSelectionRange(0, 4)  //range for copy password
+    passref.current?.select();     // select text for copy
+    // passref.current?.setSelectionRange(0, 4)  //range for copy password
     window.navigator.clipboard.writeText(password)
 
   }, [password])
@@ -50,7 +50,7 @@ function App() {
             ref={passref}
             readOnly
           />
-          <button className='outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0' onClick={copytoclip}>
+          <button className='outline-none bg-blue-700 shadow-2xl text-white px-5 py-0.5' onClick={copytoclip}>
             Copy
           </button>
         </div>
