@@ -3,3 +3,28 @@
 body {
   background-color: rgb(87, 89, 92);
 }
+
+button {
+  /* padding: 15px 25px; */
+  /* font-size: 24px; */
+  text-align: center;
+  cursor: pointer;
+  /* outline: none; */
+  color: #fff;
+  background-color: #550bf3;
+  border: none;
+  /* border-radius: 15px; */
+  box-shadow: 0 9px #999;
+}
+
+button:hover {
+  background-color: #561fcb;
+}
+
+button:active {
+  background-color: #561fcb;
+  box-shadow: 0 5px #e00909;
+  transform: translateY(3px);
+ 
+  transition: 1s;
+}
