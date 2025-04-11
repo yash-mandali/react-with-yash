@@ -7,6 +7,7 @@ function App() {
 
   // let bg_url = ""
   let bg_url = "https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  // let bg_url1 = "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
   
 
   const [amount, setAmount] = useState()
@@ -43,11 +44,13 @@ function App() {
             onSubmit={(e) => {
               e.preventDefault();
               convert()
+              
 
             }}
           >
             <div className="w-full mb-2">
               <InputBox
+              
                 label="From"
                 placeholder = "Amount"
                 amount={amount}
