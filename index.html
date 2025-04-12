@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #f8f9fa;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #007bff;
+    }
+
+    .header-icons a {
+      margin-left: 20px;
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .header-icons a:hover {
+      color: #007bff;
+    }
+
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding: 5px 15px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .search-box input {
+      border: none;
+      outline: none;
+      padding: 8px;
+      font-size: 14px;
+      width: 150px;
+      transition: width 0.3s ease;
+      background-color: transparent;
+    }
+
+    .search-box i {
+      color: #555;
+      margin-left: 10px;
+      font-size: 16px;
+      transition: transform 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .search-box:hover {
+      box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    }
+
+    .search-box:hover i,
+    .search-box input:focus+i {
+      transform: scale(1.2);
+      color: #007bff;
+    }
+
+    .search-box input:focus {
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">📚 BookNest</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="search-box">
+        <input type="text" placeholder="Search books...">
+        <i class="fas fa-search"></i>
+
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+      </div>
+
+
+    </div>
+  </header>
+</body>
+
+</html>
