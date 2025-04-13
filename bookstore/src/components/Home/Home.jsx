@@ -9,7 +9,7 @@ export default function Home() {
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
                         <h2 className="text-4xl font-bold sm:text-5xl">
                             Download Now
-                            <span className="hidden sm:block text-4xl">Lorem Ipsum</span>
+                            <span className="hidden sm:block text-4xl">Booknest</span>
                         </h2>
 
                         <Link
@@ -35,13 +35,13 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7g1fui0u5JnmGIwz2agJlBvH4IBUldec6A&s" alt="image1" />
+                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12">
+                    <img className="sm:w-96 rounded-4xl transition-transform duration-300 ease-in-out transform hover:scale-110 " src="https://cdn.pixabay.com/photo/2016/03/27/19/32/book-1283865_1280.jpg" alt="image1" />
                 </div>
             </aside>
 
             <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt7g1fui0u5JnmGIwz2agJlBvH4IBUldec6A&s" alt="image2" />
+                <img className=" sm:w-96 w-48 rounded-4xl transition-transform duration-600 ease-in-out transform hover:scale-105" src="https://cdn.pixabay.com/photo/2022/12/01/00/13/antique-7627999_1280.jpg" alt="image2" />
             </div>
 
             <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
