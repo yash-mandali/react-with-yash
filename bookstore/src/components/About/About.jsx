@@ -17,13 +17,10 @@ export default function About() {
                             React development is carried out by passionate developers
                         </h2>
                         <p className="mt-6 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
-                            accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde
-                            aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                            The book publishing process is the series of steps involved in their creation and dissemination. Books are sold at both regular stores and specialized bookstores, as well as online for delivery, and can be borrowed from libraries. The reception of books has led to a number of social consequences, including censorship.
                         </p>
                         <p className="mt-4 text-gray-600">
-                            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
-                            Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
+                            Book design is the art of incorporating the content, style, format, design, and sequence of the various elements of a book into a coherent unit
                         </p>
                     </div>
                 </div>

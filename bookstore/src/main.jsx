@@ -43,7 +43,7 @@ const router = createBrowserRouter(
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact/>} />
-      <Route path='setting' element={<Settings />} />
+      <Route path='settings' element={<Settings />} />
       <Route path='user' element={<User />} />
       <Route path='user/:userid' element={<User />} />
       <Route path='github' element={<Github />} />
