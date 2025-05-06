@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { ThemeProvider } from '../../contexts/theme';
+
 
 export default function Home() {
+
+
     return (
-        <div className="mx-auto w-full max-w-7xl">
+        // <ThemeProvider value={{ themeMode, lightTheme, darkTheme }} >
+            <div className=" dark:bg-gray-700">
             <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-4xl font-bold sm:text-5xl">
+                            <h2 className="text-4xl font-bold sm:text-5xl dark:text-white">
                             Download Now
-                            <span className="hidden sm:block text-3xl font-normal">Booknest</span>
+                                <span className="hidden sm:block text-3xl dark:text-white font-normal">Booknest</span>
                         </h2>
 
                         <Link
@@ -46,9 +51,10 @@ export default function Home() {
                 <img className=" sm:w-96 w-48 rounded-4xl transition-transform duration-600 ease-in-out transform hover:scale-105" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/12/best-game-of-thrones-books-game-of-thrones-and-philosophy.png" alt="image2" />
             </div>
 
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">$9.99</h1>
+                <h1 className="text-center text-2xl sm:text-5xl dark:text-white py-10 font-medium">$9.99</h1>
 
 
-        </div>
+            </div>
+        // </ThemeProvider>
     );
 }
