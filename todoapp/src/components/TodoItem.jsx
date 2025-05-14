@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import {useTodo} from '../contexts/Todocontext'
+import { useTodo } from '../contexts/Todocontext'
 
-function TodoItem({ todo }) {  
+function TodoItem({ todo }) {
     const [isTodoEditable, setIsTodoEditable] = useState(false)
-    const [todoMsg,setTodoMsg] = useState(todo.todo)
-    const { updateTodo, deleteTodo, toggleComplete} = useTodo()
+    const [todoMsg, setTodoMsg] = useState(todo.todo)
+    const { updateTodo, deleteTodo, toggleComplete } = useTodo()
 
     const editTodo = () => {
         updateTodo(todo.id, { ...todo, todo: todoMsg })
-        setIsTodoEditable(false )
+        setIsTodoEditable(false)
     }
 
     const toggleCompleted = () => {
@@ -17,7 +17,7 @@ function TodoItem({ todo }) {
 
     return (
         <div
-            className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
+            className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${todo.completed ? "bg-green-800  text-white" : "bg-[#ccbed7]"
                 }`}
         >
             <input
@@ -26,10 +26,10 @@ function TodoItem({ todo }) {
                 checked={todo.completed}
                 onChange={toggleCompleted}
             />
-            <input 
+            <input
                 type="text"
                 className={`border outline-none w-full bg-transparent rounded-lg ${isTodoEditable ? "border-black/10 px-2" : "border-transparent"
-                    } ${todo.completed ? "line-through" : ""}`}
+                    } ${todo.completed ? "" : ""}`}
                 value={todoMsg}
                 onChange={(e) => setTodoMsg(e.target.value)}
                 readOnly={!isTodoEditable}
@@ -46,7 +46,7 @@ function TodoItem({ todo }) {
                 }}
                 disabled={todo.completed}
             >
-                {isTodoEditable ? "📁" : "✏️"}
+                {isTodoEditable ? "✔️ " : "✏️"}
             </button>
             {/* Delete Todo Button */}
             <button
